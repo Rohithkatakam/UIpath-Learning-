@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Ajio HomeScreen",
+  "Type": "Screen",
+  "Id": "5SlZQN7MVEWqeT3XbjcsVg",
+  "Reference": "TnkBoXbBtkGnc0f0OLXk1w/5SlZQN7MVEWqeT3XbjcsVg",
+  "ParentRef": "TnkBoXbBtkGnc0f0OLXk1w/UVobq3mii0eiMiOrFzHUZw",
+  "Created": "2024-02-27T09:46:40.5199641Z",
+  "Updated": "2024-02-27T09:46:46.0786799Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DkaG2FtCcUGmSOAQH16Dqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.ajio.com/" CvTextArea="936, 154, 80, 13" CvTextArgument="Search AJIO" CvType="Text" DesignTimeRectangle="924, 196, 269, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='react-autosuggest__input react-autosuggest__input--open' placeholder='Search AJIO' aaname='' /&gt;" Guid="49e83ef6-2309-4f6e-82ff-97fbc2a96299" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="db93b9826ebcb22286d6a3a739be553a.png" xmlns="">0mwTIn1DIlk6QFiqrOSyX3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
