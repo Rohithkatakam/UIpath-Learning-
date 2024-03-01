@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="638,1803" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="660,3072" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,80 +100,114 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608,1738" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:Boolean" Name="CheckBoxChecked" />
-    </Sequence.Variables>
+  <Sequence DisplayName="Ajio_Hover" sap:VirtualizedContainerService.HintSize="670,3007" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Ajio HomeScreen" sap:VirtualizedContainerService.HintSize="546,1650" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V2" WindowResize="Maximize">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1410" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="Cargo Pants[k(Enter)]" Version="V3">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.ajio.com/" ContentHash="DkaG2FtCcUGmSOAQH16Dqg" CvTextArea="936, 154, 80, 13" CvTextArgument="Search AJIO" CvType="Text" DesignTimeRectangle="924, 196, 269, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='react-autosuggest__input react-autosuggest__input--open' placeholder='Search AJIO' aaname='' /&gt;" Guid="49e83ef6-2309-4f6e-82ff-97fbc2a96299" InformativeScreenshot="db93b9826ebcb22286d6a3a739be553a.png" Reference="TnkBoXbBtkGnc0f0OLXk1w/i3h-fDVCIk2Owcod9_siYA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-              </uix:NTypeInto.Target>
-            </uix:NTypeInto>
-            <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute 'unchecked'" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[CheckBoxChecked]" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
-              <uix:NGetAttributeGeneric.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.ajio.com/search/?query=%3Arelevance&amp;text=cargo%20pants&amp;classifier=intent&amp;gridColumns=3&amp;segmentIds=" DesignTimeRectangle="113, 305, 88, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='facet-linkname facet-linkname-genderfilter facet-linkname-Men' aaname='Men (1,052)' check:innerText='Men (1,052)' /&gt;" Guid="3fb83a94-88ce-43ae-a3e7-d43f71d35bf0" ImageBase64="" InformativeScreenshot="bd95e2e5176766069058de829ab55dc3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Offers on Cargo pants upto 20-71% off - Limited period sale | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="108, 300, 190, 28" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' type='' tag='DIV' class='facet-linkfref ' aaname='' check:innerText='Men (1,052)' /&gt;" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NGetAttributeGeneric.Target>
-            </uix:NGetAttributeGeneric>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,125" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[CheckBoxChecked]" />
-            <If Condition="[CheckBoxChecked.Equals(&quot;True&quot;)]" sap:VirtualizedContainerService.HintSize="450,693" sap2010:WorkflowViewState.IdRef="If_1">
-              <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
-                    <uix:NCheck.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.ajio.com/search/?text=Cargo%20Pants" CvElementArea="112, 308, 17, 17" CvTextArea="133, 307, 68, 16" CvTextArgument="Men (1,045)" CvType="CheckBox" DesignTimeRectangle="113, 305, 88, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='facet-linkname facet-linkname-genderfilter facet-linkname-Men' aaname='Men (1,045)' check:innerText='Men (1,045)' /&gt;" Guid="418aefb6-2d1d-4f5a-82f6-ca930574c8e6" ImageBase64="" InformativeScreenshot="29950721c33ef89dacbb97427b7c88fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Offers on Cargo pants upto 20-71% off - Limited period sale | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                    </uix:NCheck.Target>
-                  </uix:NCheck>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
-                    <uix:NCheck.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.ajio.com/search/?query=%3Arelevance&amp;text=cargo%20pants&amp;classifier=intent&amp;gridColumns=3&amp;segmentIds=" DesignTimeRectangle="113, 305, 88, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='facet-linkname facet-linkname-genderfilter facet-linkname-Men' aaname='Men (1,052)' check:innerText='Men (1,052)' /&gt;" Guid="75dec0e3-f09d-487f-a753-5540e5408a63" ImageBase64="" InformativeScreenshot="29950721c33ef89dacbb97427b7c88fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Offers on Cargo pants upto 20-71% off - Limited period sale | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                    </uix:NCheck.Target>
-                  </uix:NCheck>
-                </Sequence>
-              </If.Else>
-            </If>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="RT4GTOCS-UGaVtaspuJh3Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVFhHtZexTxRBGMWhpLzCP4DwBxBKyzM2VECCJsZCzoTSGP4EEhPs4CTExgQvxkIsDIWNVMRGCzAWRBsLaKwuYcNRXsb31v2Gmd1vdmb3wpf8cpvZ2W/ee7c3uzdljJlOYf7e6gLog2NgyPbuW7O4up4fg6w4twFmtR4aUQFo1gPnQBbKubv42AyHl+bN/oE37kAxXa2nS1AALqbjn0WzCi9e7mHa/7q//FSdU3AIOpimrqMKwAV0zUi1hta9VE0KAnstYGplrYoATOTiWhOL614qkgJRRXgCMCG6eNm9VEIKpCLCCuCJYoJ2oUVzL5WQAuENbe8JV0DwhhNC7qUSUyADTL8RgIFo9KTOvVRiCiTfK0RA5XdeJuZeqmkKUzjgd69N8EhxL9UghQ4FcHvVTlpC7r9/+1Ec+dUghR4F2L09RMj9o95GvphWiSkMKEA7YQm5/3L0NT/PhbRKTOE4KqDOvcyZIIWsVkDMvTBJCrUCUtwLbVMICkh1L7RM4ZwC1P2/iXuhRQr5TVj5GdbtekwgRIt9oU8BfIfzTjTZ9VIrkMIKBcy6g3XuJyklhQzD9mFkv4bbcC9VSqGPISugy8Hbci9VSuHmcUwwcBhyv7O7nyfTBN6UWhUpbOLQfyN6+OT5nYuLv2Mce8VGjupkQvvCu/efhvjI1yRWADk5PXuNT6/qfvcxyvtCll2ZX7//PMChLoC4Itq6F9wUuPiHj5+f4dBbryKAUESWjcaTuBeYwmh0PS47F1QB5NXeYA4NBuWGTekurW2h30y5vxAUIKAJN6qmQvh84TXRf8lRAQKadQBf39mYG5f7EONbNcf4frmiXa9jpv8Bl6RfG8nVZCIAAAAASUVORK5CYII=" InformativeScreenshot="8e7fef8b91abd3459c293ec677544190.jpg" Reference="TnkBoXbBtkGnc0f0OLXk1w/5SlZQN7MVEWqeT3XbjcsVg" Selector="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" Title="Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO" Url="https://www.ajio.com/?gad_source=1&amp;gclid=EAIaIQobChMInuba153LhAMV2qJmAh3Tcg1lEAAYASAAEgJNbPD_BwE" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608,2919" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="CheckBoxChecked" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Ajio HomeScreen" sap:VirtualizedContainerService.HintSize="546,2808" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Always" ScopeGuid="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2568" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NHover DisplayName="Hover 'MEN'" sap:VirtualizedContainerService.HintSize="450,197" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" InteractionMode="DebuggerApi" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/" CvTextArea="437, 157, 34, 14" CvTextArgument="MEN" CvType="Text" DesignTimeRectangle="439, 154, 33, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='MEN' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='MEN' tag='SPAN' type='' class='' aaname='MEN' check:innerText='MEN' /&gt;" Guid="1f396b98-e53c-4fea-9baf-f8fc4acc369f" InformativeScreenshot="cf848745412c31a4aaaf206a02d3e91b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NHover DisplayName="Hover 'BRANDS'" sap:VirtualizedContainerService.HintSize="450,197" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="DebuggerApi" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/" CvTextArea="309, 202, 64, 14" CvTextArgument="BRANDS" CvType="Text" DesignTimeRectangle="300, 185, 81, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='BRANDS' parentid='appContainer' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='BRANDS' parentid='appContainer' tag='A' type='' class='' check:innerText='BRANDS' /&gt;" Guid="4b811d0d-1ef8-4d1d-a16f-4b76a21249d5" InformativeScreenshot="5086265fd1386e2b0687f1b24a88524f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Superdry'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/" CvTextArea="101, 270, 58, 16" CvTextArgument="Superdry" CvType="Text" DesignTimeRectangle="103, 268, 55, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Superdry' parentid='third' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Superdry' parentid='third' tag='A' type='' class='' check:innerText='Superdry' /&gt;" Guid="013f6032-2389-4dd4-9526-da8af4b7002e" InformativeScreenshot="6b358e2e32d22ce8700a985894da8cd1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'MORE'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/s/superdry-3483-6296?query=%3Arelevance&amp;curated=true&amp;curatedid=superdry-3483-6296&amp;gridColumns=3&amp;segmentIds=" CvTextArea="112, 573, 36, 12" CvTextArgument="MORE" CvType="Text" DesignTimeRectangle="113, 570, 35, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;strong' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' class='' aaname='MORE' check:innerText='MORE' /&gt;" Guid="0db3d45d-2d3a-4c1c-ba78-9adda9d0312f" InformativeScreenshot="c88d5960f9377de3639b793a607bc25b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superdry' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sunglasses (44)'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/s/superdry-3483-6296?query=%3Arelevance&amp;curated=true&amp;curatedid=superdry-3483-6296&amp;gridColumns=3&amp;segmentIds=" CvElementArea="1055, 262, 18, 17" CvTextArea="1078, 262, 91, 16" CvTextArgument="Sunglasses (44)" CvType="CheckBox" DesignTimeRectangle="1056, 257, 114, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='26' parentid='modalId' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='modalId' tag='LABEL' class=' facet-unchecked' aaname='' check:innerText='Sunglasses (44)' /&gt;" Guid="3e643a33-034b-4c3a-9ab1-f74e0ccfabf3" InformativeScreenshot="72474c029f8b7028df254b510bc45327.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superdry' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/s/superdry-3483-6296?query=%3Arelevance&amp;curated=true&amp;curatedid=superdry-3483-6296&amp;gridColumns=3&amp;segmentIds=" CvElementArea="1144, 635, 118, 43" CvTextArea="1181, 650, 43, 12" CvTextArgument="APPLY" CvType="Button" DesignTimeRectangle="1146, 636, 115, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Apply' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Apply' tag='BUTTON' type='submit' class='rilrtl-button apply-popup-button rilrtl-button--filter-footer-action rilrtl-button--apply' aaname='Apply' check:innerText='APPLY' /&gt;" Guid="8f644652-bae2-45f0-b65e-3ac9b720f6e3" InformativeScreenshot="a42df97f88cd139a515523138ae9fc37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superdry' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACE 025'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1969070-8fb9-4ad7-a720-75285ef08cc1" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.ajio.com/s/superdry-3483-6296?query=%3Arelevance%3Al1l3nestedcategory%3AMen%20-%20Sunglasses&amp;curated=true&amp;curatedid=superdry-3483-6296&amp;gridColumns=3" CvTextArea="666, 598, 271, 16" CvTextArgument="ACE 025 57 UV-Protected Square Sunglasses" CvType="Text" DesignTimeRectangle="651, 597, 303, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='ACE 025 57 UV-Protected Square Sunglasses' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='ACE 025 57 UV-Protected Square Sunglasses' tag='DIV' type='' class='nameCls' aaname='ACE 025 57 UV-Protected Square Sunglasses' check:innerText='ACE 025 57 UV-Protected Square Sunglasses' /&gt;" Guid="17119eab-9403-4b52-a285-c199f92b3616" InformativeScreenshot="59b4459799646f05369a14227e70e14c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superdry' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com" sap:VirtualizedContainerService.HintSize="450,1102" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="43afc37c-5705-4d68-a3e2-41657985b9d6" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,860" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'ADD TO BAG'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43afc37c-5705-4d68-a3e2-41657985b9d6" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.ajio.com/superdry-ace-025-57-uv-protected-square-sunglasses/p/469310773_grey" CvElementArea="929, 657, 305, 43" CvTextArea="1043, 671, 99, 15" CvTextArgument="ADD TO BAG" CvType="Button" DesignTimeRectangle="931, 459, 300, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' class='btn-gold' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='btn-gold' tag='DIV' type='' aaname='' check:innerText='ADD TO BAG' /&gt;" Guid="caee65ce-4171-4767-a92a-e82a72625b49" InformativeScreenshot="aa7ef7bde6519f4cafc65a28509afb52.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NHover DisplayName="Hover 'DIV'" sap:VirtualizedContainerService.HintSize="354,197" HoverTime="3" sap2010:WorkflowViewState.IdRef="NHover_3" ScopeIdentifier="43afc37c-5705-4d68-a3e2-41657985b9d6" Version="V3">
+                        <uix:NHover.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.ajio.com/superdry-ace-025-57-uv-protected-square-sunglasses/p/469310773_grey" CvElementArea="1246, 141, 39, 39" CvType="Icon" DesignTimeRectangle="1249, 144, 34, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='appContainer' tabindex='0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='appContainer' tabindex='0' tag='DIV' type='' class='ic-cart ' aaname='' /&gt;" Guid="daeb5450-0168-448a-9fc4-955d5223276d" InformativeScreenshot="f6ed8ff4f6cce73cb7613b01e28493e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                        </uix:NHover.Target>
+                      </uix:NHover>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PROCEED TO BAG'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43afc37c-5705-4d68-a3e2-41657985b9d6" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.ajio.com/superdry-ace-025-57-uv-protected-square-sunglasses/p/469310773_grey" CvElementArea="1017, 438, 251, 42" CvTextArea="1090, 453, 105, 12" CvTextArgument="PROCEED TO BAG" CvType="Button" DesignTimeRectangle="1019, 440, 248, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='PROCEED TO BAG' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='PROCEED TO BAG' tag='DIV' type='' class='mini-cart-btn' aaname='PROCEED TO BAG' check:innerText='PROCEED TO BAG' /&gt;" Guid="3fe8a5a1-92d7-4b36-9956-6dc55615c0ba" InformativeScreenshot="26367bdbca4181ff9b2865cda9a4b81f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed to shipping'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43afc37c-5705-4d68-a3e2-41657985b9d6" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.ajio.com/cart" CvElementArea="982, 513, 303, 53" CvTextArea="1056, 534, 152, 12" CvTextArgument="PROCEED TO SHIPPING" CvType="Button" DesignTimeRectangle="983, 515, 300, 50" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='rilrtl-button button shipping-button' aaname='Proceed to shipping' check:innerText='PROCEED TO SHIPPING' /&gt;" Guid="7fb718ed-1520-479e-a416-f0f7d90e5ee6" InformativeScreenshot="fbdf3d5b8048fd025ce767877bee0dcc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Shopping Bag | AJIO' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVFhHtZexTxRBGMWhpLzCP4DwBxBKyzM2VECCJsZCzoTSGP4EEhPs4CTExgQvxkIsDIWNVMRGCzAWRBsLaKwuYcNRXsb31v2Gmd1vdmb3wpf8cpvZ2W/ee7c3uzdljJlOYf7e6gLog2NgyPbuW7O4up4fg6w4twFmtR4aUQFo1gPnQBbKubv42AyHl+bN/oE37kAxXa2nS1AALqbjn0WzCi9e7mHa/7q//FSdU3AIOpimrqMKwAV0zUi1hta9VE0KAnstYGplrYoATOTiWhOL614qkgJRRXgCMCG6eNm9VEIKpCLCCuCJYoJ2oUVzL5WQAuENbe8JV0DwhhNC7qUSUyADTL8RgIFo9KTOvVRiCiTfK0RA5XdeJuZeqmkKUzjgd69N8EhxL9UghQ4FcHvVTlpC7r9/+1Ec+dUghR4F2L09RMj9o95GvphWiSkMKEA7YQm5/3L0NT/PhbRKTOE4KqDOvcyZIIWsVkDMvTBJCrUCUtwLbVMICkh1L7RM4ZwC1P2/iXuhRQr5TVj5GdbtekwgRIt9oU8BfIfzTjTZ9VIrkMIKBcy6g3XuJyklhQzD9mFkv4bbcC9VSqGPISugy8Hbci9VSuHmcUwwcBhyv7O7nyfTBN6UWhUpbOLQfyN6+OT5nYuLv2Mce8VGjupkQvvCu/efhvjI1yRWADk5PXuNT6/qfvcxyvtCll2ZX7//PMChLoC4Itq6F9wUuPiHj5+f4dBbryKAUESWjcaTuBeYwmh0PS47F1QB5NXeYA4NBuWGTekurW2h30y5vxAUIKAJN6qmQvh84TXRf8lRAQKadQBf39mYG5f7EONbNcf4frmiXa9jpv8Bl6RfG8nVZCIAAAAASUVORK5CYII=" InformativeScreenshot="26ff4ad8ccc40d2125d0b4783227fb4f.jpg" Selector="&lt;html app='chrome.exe' title='Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com' /&gt;" Title="Buy Grey Sunglasses for Men by SUPERDRY Online | Ajio.com" Url="https://www.ajio.com/superdry-ace-025-57-uv-protected-square-sunglasses/p/469310773_grey" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="RT4GTOCS-UGaVtaspuJh3Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVFhHtZexTxRBGMWhpLzCP4DwBxBKyzM2VECCJsZCzoTSGP4EEhPs4CTExgQvxkIsDIWNVMRGCzAWRBsLaKwuYcNRXsb31v2Gmd1vdmb3wpf8cpvZ2W/ee7c3uzdljJlOYf7e6gLog2NgyPbuW7O4up4fg6w4twFmtR4aUQFo1gPnQBbKubv42AyHl+bN/oE37kAxXa2nS1AALqbjn0WzCi9e7mHa/7q//FSdU3AIOpimrqMKwAV0zUi1hta9VE0KAnstYGplrYoATOTiWhOL614qkgJRRXgCMCG6eNm9VEIKpCLCCuCJYoJ2oUVzL5WQAuENbe8JV0DwhhNC7qUSUyADTL8RgIFo9KTOvVRiCiTfK0RA5XdeJuZeqmkKUzjgd69N8EhxL9UghQ4FcHvVTlpC7r9/+1Ec+dUghR4F2L09RMj9o95GvphWiSkMKEA7YQm5/3L0NT/PhbRKTOE4KqDOvcyZIIWsVkDMvTBJCrUCUtwLbVMICkh1L7RM4ZwC1P2/iXuhRQr5TVj5GdbtekwgRIt9oU8BfIfzTjTZ9VIrkMIKBcy6g3XuJyklhQzD9mFkv4bbcC9VSqGPISugy8Hbci9VSuHmcUwwcBhyv7O7nyfTBN6UWhUpbOLQfyN6+OT5nYuLv2Mce8VGjupkQvvCu/efhvjI1yRWADk5PXuNT6/qfvcxyvtCll2ZX7//PMChLoC4Itq6F9wUuPiHj5+f4dBbryKAUESWjcaTuBeYwmh0PS47F1QB5NXeYA4NBuWGTekurW2h30y5vxAUIKAJN6qmQvh84TXRf8lRAQKadQBf39mYG5f7EONbNcf4frmiXa9jpv8Bl6RfG8nVZCIAAAAASUVORK5CYII=" InformativeScreenshot="8e7fef8b91abd3459c293ec677544190.jpg" Reference="TnkBoXbBtkGnc0f0OLXk1w/5SlZQN7MVEWqeT3XbjcsVg" Selector="&lt;html app='chrome.exe' title='Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO' /&gt;" Title="Online Shopping for Women, Men, Kids – Clothing, Footwear | AJIO" Url="https://www.ajio.com/?gad_source=1&amp;gclid=EAIaIQobChMInuba153LhAMV2qJmAh3Tcg1lEAAYASAAEgJNbPD_BwE" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
   </Sequence>
 </Activity>
