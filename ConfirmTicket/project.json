@@ -1,7 +1,7 @@
 {
-  "name": "SauceTest",
-  "projectId": "39a9a399-801f-4dd9-a9f5-c4d5a1ac0b20",
-  "description": "SauceTest\r\n",
+  "name": "ConfirmTicket",
+  "projectId": "75c349fc-5ab9-447d-8435-ab323c187fac",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.0-preview]",
@@ -46,9 +46,10 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "8fcf3748-c01a-405e-88f3-386e9718ff73",
+        "testCaseId": "cbba6a11-40ef-4306-b04e-b0aa78fc990b",
         "testCaseType": "TestCase",
-        "fileName": "SD99.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CnfTckt.xaml"
       }
     ],
     "saveToCloud": false
@@ -57,7 +58,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "1e830e2a-972e-4685-8903-b19467477b12",
+      "uniqueId": "e6f18ac5-42d1-4b40-a83a-a71b971f4ec2",
       "input": [],
       "output": []
     }

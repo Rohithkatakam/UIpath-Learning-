@@ -1,0 +1,238 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="638,3110" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="568,3045" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Str_InputDate" />
+      <Variable x:TypeArguments="x:String" Name="Str_MonthYear" />
+      <Variable x:TypeArguments="x:String" Name="Str_Date">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">15</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="506,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Date Format dd/MM/yyyy" Title="Enter Date">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Str_InputDate]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="506,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Str_MonthYear]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(Str_InputDate, "d/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("MMMM yyyy")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="506,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Str_Date]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(Str_InputDate, "d/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("d/MM").Split("/"c)(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Confirm Ticket - Train Ticket booking Online | Train seat availability" sap:VirtualizedContainerService.HintSize="506,2411" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="de78a671-0335-498d-afcb-fefe80c243f6" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,2194" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Str_Calander" />
+              <Variable x:TypeArguments="x:String" Name="Str_FromStation">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">BDC</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="Str_ToStation">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">SC</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'FromNDLS - New Delhi'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Text="[Str_FromStation]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="204, 335, 299, 80" DesignTimeScaleFactor="1" FriendlyName="'FromNDLS - New Delhi'" FullSelectorArgument="&lt;webctrl class='source' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='source' parentid='root' tag='DIV' type='' aaname='' check:innerText='From&amp;#xD;&amp;#xA;NDLS - New Delhi' /&gt;" Guid="4ac549bf-fd53-4cae-90a8-e3d6cce8e9d5" ImageBase64="" InformativeScreenshot="dc6ae3d490ab3666a70517713ce4befe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'BDCR - Bhadrachalam Road'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="204, 462, 300, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'BDCR - Bhadrachalam Road'" FullSelectorArgument="&lt;webctrl id='source-item-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='source-item-1' tag='A' type='' class='dropdown-item' aaname='BDCR  - Bhadrachalam Road' check:innerText='BDCR - Bhadrachalam Road' /&gt;" Guid="15bc6143-1e74-450e-8c6c-0f74fa060528" InformativeScreenshot="bd5faa745f11cfbc44cd24e7d81e1916.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'ToMMCT - Mumbai Central'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Text="[Str_ToStation]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="503, 335, 299, 80" DesignTimeScaleFactor="1" FriendlyName="'ToMMCT - Mumbai Central'" FullSelectorArgument="&lt;webctrl class='destination' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='destination' parentid='root' tag='DIV' type='' aaname='' check:innerText='To&amp;#xD;&amp;#xA;MMCT - Mumbai Central' /&gt;" Guid="4ab84831-a87a-42df-8e43-83073f47b9c7" ImageBase64="" InformativeScreenshot="59b68eda1fbb53b2b4f14c8ac09ba3c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'SC -'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="503, 429, 300, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SC -'" FullSelectorArgument="&lt;webctrl id='destination-item-0' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='destination-item-0' tag='A' type='' class='dropdown-item' aaname='SC  - Secunderabad Junction' check:innerText='SC - Secunderabad Junction' /&gt;" Guid="cd72f9d5-cec9-413d-aa77-e276d8ee58f6" InformativeScreenshot="baf8949386c2520840299e8c592ce338.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Departure DateFri,'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="802, 397, 200, 80" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Departure DateFri,'" FullSelectorArgument="&lt;webctrl class='doj' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='doj' parentid='root' tag='DIV' type='' aaname='' /&gt;" Guid="821b9a0a-e390-4830-a65e-f70c13564f66" InformativeScreenshot="19c9eedbeef5d9ad3acf40b598defffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'February 2024'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" TextString="[Str_Calander]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="882, 413, 92, 17" CvType="AnyWordGroup" DesignTimeRectangle="821, 411, 214, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'February 2024'" FullSelectorArgument="&lt;webctrl idx='7' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter' /&gt;" Guid="06c7c597-4423-494c-8735-7fe9ef29294e" ImageBase64="" InformativeScreenshot="aab32d68d1029f8e4640d863996d3174.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="410,578" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,442" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvElementArea="1049, 412, 18, 21" CvType="ArrowButton" DesignTimeRectangle="1047, 411, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl idx='2' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='MuiSvgIcon-root' aaname='' /&gt;" Guid="eafa5e02-49d3-45de-a0c8-420d7d541b32" InformativeScreenshot="532f83070ef959281694ad58d9a01798.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'February 2024'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" TextString="[Str_Calander]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="882, 413, 92, 17" CvType="AnyWordGroup" DesignTimeRectangle="821, 411, 214, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'February 2024'" FullSelectorArgument="&lt;webctrl idx='7' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter' /&gt;" Guid="06c7c597-4423-494c-8735-7fe9ef29294e" ImageBase64="" InformativeScreenshot="aab32d68d1029f8e4640d863996d3174.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Str_MonthYear.Trim&lt;&gt;Str_Calander.Trim" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '15'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de78a671-0335-498d-afcb-fefe80c243f6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="918, 563, 19, 15" CvTextArgument="15" CvType="Text" DesignTimeRectangle="910, 555, 36, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'15'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='BUTTON' /&gt;&quot;, Str_Date)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='BUTTON' type='button' class='MuiButtonBase-root MuiIconButton-root MuiPickersDay-day' check:innerText='{0}' /&gt;&quot;, Str_Date)]" Guid="adaf39f9-5243-4ad6-a008-e93825994e84" ImageBase64="" InformativeScreenshot="16763de905c23d0f460784ef922dfdfa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="918, 563, 19, 15" CvTextArgument="15" CvType="Text" DesignTimeRectangle="920, 562, 16, 20" ElementType="Text" FriendlyName="'15'" FullSelectorArgument="&lt;webctrl aaname='15' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='15' tag='P' type='' class='MuiTypography-root MuiTypography-body2 MuiTypography-colorInherit' check:innerText='15' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="15d2cf6bbce7809c3c798213c5024881.jpg" Selector="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" Title="Confirm Ticket - Train Ticket booking Online | Train seat availability" Url="https://www.confirmtkt.com/rbooking-d/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
